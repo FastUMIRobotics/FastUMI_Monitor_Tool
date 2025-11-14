@@ -16,6 +16,10 @@
 
 
 ### 安装与运行
+0. **启动相机**
+   ```bash
+   roslaunch xv_sdk xv_sdk.launch
+   ```
 
 1. **确保脚本有执行权限**
    ```bash
