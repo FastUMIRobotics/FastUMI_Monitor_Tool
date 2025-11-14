@@ -19,12 +19,12 @@
 
 1. **确保脚本有执行权限**
    ```bash
-   chmod +x run_rostopic_menu.sh
+   chmod +x fastumi_monitor_menu.sh
    ```
 
 2. **运行脚本**
    ```bash
-   ./run_rostopic_menu.sh
+   bsh fastumi_monitor_menu.sh
    ```
 
 3. **基本使用**
@@ -48,6 +48,7 @@
 | 8 | 右前鱼眼相机频率 | `fisheye_cameras/right/camera_info` 频率 |
 | 9 | 右上鱼眼相机频率 | `fisheye_cameras/right2/camera_info` 频率 |
 | 10 | TOF相机频率 | `tof_camera/camera_info` 频率 |
+| 21 | 夹具数据读取 | `/clamp/Data` 主题内容 |
 
 ### RViz可视化界面 (11-20)
 
@@ -99,33 +100,6 @@
 - `~/catkin_ws/devel/setup.bash`
 - `~/ros_ws/devel/setup.bash`
 
-## 🔧 配置说明
-
-### 设备配置
-
-在脚本中修改以下配置：
-
-```bash
-# 第11行：设备ID前缀
-TOPIC_PREFIX="/xv_sdk/250801DR48FP25002993"
-
-# 第12行：RViz配置文件路径
-RVIZ_PATH="/home/onestar/catkin_ws/src/xv_sdk/rviz/"
-```
-
-**修改方法：**
-1. 将 `250801DR48FP25002993` 替换为您的实际设备ID
-2. 确认RViz配置文件路径是否正确
-
-### 查看实际设备ID
-
-```bash
-# 查看所有ROS主题
-rostopic list
-
-# 查找XV SDK相关主题
-rostopic list | grep xv_sdk
-```
 
 ## 📝 使用示例
 
