@@ -53,7 +53,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /xv_sdk/${XV_DEVICE_SERIAL}/color_camera/image_color
+      Image Topic: /xv_sdk/${XV_DEVICE_SERIAL}/color_camera/image
       Max Value: 1
       Median window: 5
       Min Value: 0

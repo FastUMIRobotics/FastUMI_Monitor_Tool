@@ -55,7 +55,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /pose_markers
+      Marker Topic: /xv_sdk/${XV_DEVICE_SERIAL}/slam/pose_markers
       Name: MarkerArray
       Namespaces:
         pose_arrows: true

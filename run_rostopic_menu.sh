@@ -18,9 +18,9 @@ RVIZ_PATH=$CURRENT_PATH"/rviz/generated/${SERIAL_NUMBER}/"
 declare -A CMD_MAP
 CMD_MAP[1]="rostopic hz ${TOPIC_PREFIX}/slam/pose"
 CMD_MAP[2]="rostopic echo ${TOPIC_PREFIX}/slam/pose"
-CMD_MAP[3]="rostopic hz ${TOPIC_PREFIX}/slam/visual_pose"
+CMD_MAP[3]="rostopic hz ${TOPIC_PREFIX}/slam/pose"
 CMD_MAP[4]="rostopic echo ${TOPIC_PREFIX}/slam/visual_pose"
-CMD_MAP[5]="rostopic hz ${TOPIC_PREFIX}/color_camera/image_color"
+CMD_MAP[5]="rostopic hz ${TOPIC_PREFIX}/color_camera/image"
 CMD_MAP[6]="rostopic hz ${TOPIC_PREFIX}/fisheye_cameras/left/camera_info"
 CMD_MAP[7]="rostopic hz ${TOPIC_PREFIX}/fisheye_cameras/left2/camera_info"
 CMD_MAP[8]="rostopic hz ${TOPIC_PREFIX}/fisheye_cameras/right/camera_info"
@@ -153,9 +153,9 @@ print_menu() {
 ====== 选择要运行的命令（支持单个编号、逗号列表、范围）======
  1) IMU 频率   hz   slam/pose
  2) IMU数据读取   echo slam/pose
- 3) SLAM 频率   hz   slam/visual_pose
+ 3) SLAM 频率   hz   slam/pose
  4) SLAM数据读取   echo slam/visual_pose
- 5) RGB相机频率   hz   color_camera/image_color
+ 5) RGB相机频率   hz   color_camera/image
  6) 左前鱼眼相机频率  hz   fisheye_cameras/left/camera_info
  7) 左上鱼眼相机频率  hz   fisheye_cameras/left2/camera_info
  8) 右前鱼眼相机频率  hz   fisheye_cameras/right/camera_info

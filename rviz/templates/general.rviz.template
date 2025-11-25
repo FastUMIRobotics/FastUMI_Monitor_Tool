@@ -102,7 +102,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /xv_sdk/${XV_DEVICE_SERIAL}/color_camera/image_color
+      Image Topic: /xv_sdk/${XV_DEVICE_SERIAL}/color_camera/image
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -138,7 +138,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /pose_markers
+      Marker Topic: /xv_sdk/${XV_DEVICE_SERIAL}/slam/pose_markers
       Name: SLAM
       Namespaces:
         pose_arrows: true
