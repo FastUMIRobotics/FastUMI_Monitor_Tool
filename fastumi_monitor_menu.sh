@@ -10,7 +10,7 @@ mapfile -t XVISIO_SERIAL_ARRAY <<< "$XVISIO_SERIALS"
 # 遍历数组
 for item in ${XVISIO_SERIAL_ARRAY[@]}; do
     echo "当前序列号: $item"
-    gnome-terminal -- bash -c "bash single_fastumi_monitor_menu.sh"
+    gnome-terminal -- bash -c "bash single_fastumi_monitor_menu.sh $item"
 done
 
 
