@@ -165,6 +165,6 @@ class PoseStampedToMarkers:
         return base_alpha * (1.0 - fade_progress)
 
 if __name__ == "__main__":
-    rospy.init_node("xv_pose_to_markers")
+    rospy.init_node(f"xv_pose_to_markers_{SERIAL_NUMBER}")
     PoseStampedToMarkers()
     rospy.spin()
